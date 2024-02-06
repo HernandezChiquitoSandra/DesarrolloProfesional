@@ -1,0 +1,11 @@
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\bin\Release\net7.0\AppBlazor.Shared.deps.json
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\bin\Release\net7.0\AppBlazor.Shared.dll
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\bin\Release\net7.0\AppBlazor.Shared.pdb
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\AppBlazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\AppBlazor.Shared.AssemblyInfoInputs.cache
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\AppBlazor.Shared.AssemblyInfo.cs
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\AppBlazor.Shared.csproj.CoreCompileInputs.cache
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\AppBlazor.Shared.dll
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\refint\AppBlazor.Shared.dll
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\AppBlazor.Shared.pdb
+C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Shared\obj\Release\net7.0\ref\AppBlazor.Shared.dll

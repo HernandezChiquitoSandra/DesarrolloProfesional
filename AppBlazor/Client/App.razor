@@ -1,0 +1,23 @@
+﻿<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <!--Para ver si el usuario estra auth y mostrar dif cosas, permite acceder a info de usuario-->
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" >
+            <Authorizing>
+                <p>Autorizando peticion :)</p>
+            </Authorizing>
+            <NotAuthorized>
+                <p>No tienes permiso para ver esto :c</p>
+            </NotAuthorized>
+            </AuthorizeRouteView>
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found><!--El faund es para componentes paginados-->
+    <NotFound>
+        <CascadingAuthenticationState>
+            <!--se accede a data del usuario uth-->
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p role="alert">Sorry, there's nothing at this address.</p>
+        </LayoutView>
+        </CascadingAuthenticationState>
+    </NotFound>
+</Router>

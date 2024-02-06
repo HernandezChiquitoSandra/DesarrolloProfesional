@@ -1,0 +1,49 @@
+﻿@page "/"
+@page "/index"
+@using AppBlazor.Client.Repositorios;
+@using static AppBlazor.Shared.DTOs.HomaPageDTO;
+@inject IRepositorio repositorio
+
+<PageTitle>Blazor Películas</PageTitle>
+
+
+<AuthorizeView><!--lo que ve el user si esta auth -> Roles="admin"-->
+    <Authorized>
+        <p>Estas Auth, @context.User.Identity?.Name</p>
+    </Authorized>
+    <NotAuthorized>
+        No estas auth para ver
+    </NotAuthorized>
+</AuthorizeView>
+<div>
+    <h3>En Cartelera</h3>
+    <ListadoPeliculas Peliculas="EnCartelera" />
+</div>
+
+<div>
+    <h3>Próximos Estrenos</h3>
+    <ListadoPeliculas Peliculas="FuturosEstrenos" />
+</div>
+
+@code {
+
+    public List<Pelicula>? FuturosEstrenos { get; set; }
+    public List<Pelicula>? EnCartelera { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var respuestaHTTP = await repositorio.Get<HomePageDTO>("api/peliculas");
+
+        if (respuestaHTTP.HttpResponseMessage.IsSuccessStatusCode)
+        {
+            FuturosEstrenos = respuestaHTTP.Response!.ProximosEstrenos;
+            EnCartelera = respuestaHTTP.Response!.PeliculasEnCartelera;
+        }
+        else
+        {
+            Console.WriteLine(respuestaHTTP.HttpResponseMessage.StatusCode);
+        }
+
+
+    }
+}

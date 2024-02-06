@@ -1,0 +1,175 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AppBlazor.Client
+build_property.RootNamespace = AppBlazor.Client
+build_property.ProjectDir = C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\dimis\source\repos\AppBlazor\AppBlazor\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Actores/CrearActor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xDcmVhckFjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Actores/EditarActor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xFZGl0YXJBY3Rvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Actores/FormularioActores.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xGb3JtdWxhcmlvQWN0b3Jlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Actores/IndiceActor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0b3Jlc1xJbmRpY2VBY3Rvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Auth/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Auth/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Auth/Registro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Ryby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Genero/CrearGenero.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvXENyZWFyR2VuZXJvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Genero/EditarGenero.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvXEVkaXRhckdlbmVyby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Genero/FormularioGenero.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvXEZvcm11bGFyaW9HZW5lcm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Genero/IndiceGenero.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJvXEluZGljZUdlbmVyby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Peliculas/CrearPelicula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXENyZWFyUGVsaWN1bGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Peliculas/EditarPelicula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXEVkaXRhclBlbGljdWxhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Peliculas/FiltroPeliculas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXEZpbHRyb1BlbGljdWxhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Peliculas/FormularioPelicula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXEZvcm11bGFyaW9QZWxpY3VsYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Peliculas/IndicePeliculas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXEluZGljZVBlbGljdWxhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Peliculas/VisualizarPelicula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVsaWN1bGFzXFZpc3VhbGl6YXJQZWxpY3VsYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Usuarios/EditarUsuario.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcRWRpdGFyVXN1YXJpby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Pages/Usuarios/IndiceUsuarios.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcSW5kaWNlVXN1YXJpb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/EnlacesAuth.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVubGFjZXNBdXRoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/InputImg.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXElucHV0SW1nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/InputMarkdown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXElucHV0TWFya2Rvd24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/ListadoGenerico.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhZG9HZW5lcmljby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/ListadoPeliculas.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhZG9QZWxpY3VsYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/MostrarMarkdown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1vc3RyYXJNYXJrZG93bi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/Paginacion.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBhZ2luYWNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/PeliculaIndividual.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBlbGljdWxhSW5kaXZpZHVhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/Rating.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJhdGluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/SelectorMultiple.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlbGVjdG9yTXVsdGlwbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/SelectorMultipleTypeahead.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlbGVjdG9yTXVsdGlwbGVUeXBlYWhlYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ulco21orre
+
+[C:/Users/dimis/source/repos/AppBlazor/AppBlazor/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wdbd1o7cjo

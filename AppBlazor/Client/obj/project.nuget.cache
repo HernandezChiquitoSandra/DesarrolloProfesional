@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "dgSpecHash": "lvF7dTTaap28epplxQHCt+o7bHDW9N2ZzfCkH4S4K9vnnkKLTdJJoBRaZg4xngljLKYnGWEIMrN+6RKSLHzkkA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dimis\\source\\repos\\AppBlazor\\AppBlazor\\Client\\AppBlazor.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dimis\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\blazored.typeahead\\4.7.0\\blazored.typeahead.4.7.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\markdig\\0.34.0\\markdig.0.34.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.10\\microsoft.aspnetcore.authorization.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.10\\microsoft.aspnetcore.components.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.10\\microsoft.aspnetcore.components.analyzers.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.1\\microsoft.aspnetcore.components.authorization.7.0.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.10\\microsoft.aspnetcore.components.forms.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.10\\microsoft.aspnetcore.components.web.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.10\\microsoft.aspnetcore.components.webassembly.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.1\\microsoft.aspnetcore.components.webassembly.authentication.7.0.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\7.0.10\\microsoft.aspnetcore.components.webassembly.devserver.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.10\\microsoft.aspnetcore.metadata.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.4\\microsoft.extensions.configuration.binder.7.0.4.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\7.0.0\\microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.configuration.json\\7.0.0\\microsoft.extensions.configuration.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.3\\microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.3\\microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.3\\microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.jsinterop\\7.0.10\\microsoft.jsinterop.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.10\\microsoft.jsinterop.webassembly.7.0.10.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.1\\microsoft.net.sdk.webassembly.pack.8.0.1.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.3\\system.identitymodel.tokens.jwt.7.0.3.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\dimis\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.IdentityModel.Tokens.Jwt\" 7.0.3 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net7.0",
+        "net7.0/browser-wasm"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.IdentityModel.Tokens.Jwt\" 7.0.3 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net7.0",
+        "net7.0/browser-wasm"
+      ]
+    }
+  ]
+}

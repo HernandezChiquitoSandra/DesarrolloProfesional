@@ -1,0 +1,24 @@
+﻿@using AppBlazor.Shared.Entidades;
+
+<EditForm Model="Genero" OnValidSubmit="onValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label>Nombre:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Genero.Nombre" />
+            <ValidationMessage For="@(() => Genero.Nombre)" /> @*Se pone lo del for para decirle que va a ir correspondiente a un campo*@
+        </div>
+    </div>
+
+    <button class="btn btn-success" type="submit">Guardar</button>
+</EditForm>
+
+@code {
+    [EditorRequired]
+    [Parameter]
+    public Genero Genero { get; set; } = null;
+
+    [Parameter]
+    [EditorRequired]
+    public EventCallback onValidSubmit { get; set; }
+}

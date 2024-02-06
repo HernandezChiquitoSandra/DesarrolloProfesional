@@ -1,0 +1,75 @@
+﻿@page "/peliculas/editar/{PeliculaId:int}"
+
+@using AppBlazor.Client.Repositorios;
+@inject IRepositorio repositorio
+@inject NavigationManager navigationManager
+
+
+
+
+<h3>Editar Película</h3>
+
+@if (Pelicula is null)
+{
+    <p>Cargando...</p>
+}
+else
+{
+    <FormularioPelicula Pelicula="Pelicula" OnValidSubmit="Editar" GenerosNoSeleccionados="GenerosNoSeleccionados" GenerosSeleccionados="GenerosSeleccionados" />
+
+}
+
+
+@code {
+    [Parameter] public int PeliculaId { get; set; }
+    Pelicula? Pelicula;
+    private List<Genero> GenerosNoSeleccionados = new List<Genero>();
+    private List<Genero> GenerosSeleccionados = new List<Genero>();
+    private List<Actor> ActoresSeleccionados = new List<Actor>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var httpResponse = await repositorio
+            .Get<PeliculaActualizacionDTO>($"api/peliculas/actualizar/{PeliculaId}");
+
+        if (httpResponse.Error)
+        {
+            if (httpResponse.HttpResponseMessage.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                navigationManager.NavigateTo("/");
+            }
+            else
+            {
+                var mensajeError = await httpResponse.ObtenerMensajeError();
+                Console.WriteLine("Error de nuevo para editar");
+            }
+        }
+        else
+        {
+            var modelo = httpResponse.Response!;
+            //ActoresSeleccionados = modelo.Actores;
+            GenerosSeleccionados = modelo.GenerosSeleccionados;
+            GenerosNoSeleccionados = modelo.GenerosNoSeleccionados;
+            Pelicula = modelo.Pelicula;
+        }
+    }
+
+    private async Task Editar()
+    {
+        var respuestaHTTP = await repositorio.Put("api/peliculas", Pelicula);
+
+        if (respuestaHTTP.Error)
+        {
+            var mensajeError = await respuestaHTTP.ObtenerMensajeError();
+            //await swal.FireAsync("Error", mensajeError, SweetAlertIcon.Error);
+            Console.WriteLine("Error al intentar editar");
+
+        }
+        else
+        {
+            navigationManager.NavigateTo($"pelicula/{PeliculaId}/{Pelicula.Titulo.Replace(" ", "-")}");
+        }
+
+        Console.WriteLine("Editando");
+    }
+}

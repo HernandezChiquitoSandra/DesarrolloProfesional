@@ -1,0 +1,110 @@
+﻿@using AppBlazor.Client.Helpers;
+@using AppBlazor.Shared.Entidades;
+<h3>FormularioPeliculas</h3>
+
+<EditForm Model="Pelicula" OnValidSubmit="OnDataAnnotationsValidated">
+    <DataAnnotationsValidator />
+
+    <div class="mb-3">
+        <label>Titulo:</label>
+        <InputText class="form-control" @bind-Value="@Pelicula.Titulo" />
+        <ValidationMessage For="@(()=>Pelicula.Titulo)" />
+    </div>
+
+    <div class="mb-3">
+        <label>En cartelera:</label>
+        <div>
+            <InputCheckbox @bind-Value="@Pelicula.EnCartelera" />
+            <ValidationMessage For="@(() => Pelicula.EnCartelera)" />
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label>Lanzamiento:</label>
+        <div>
+            <InputDate class="form-control" @bind-Value="@Pelicula.FechaLanzamiento" />
+            <ValidationMessage For="@(()=>Pelicula.FechaLanzamiento)" />
+        </div>
+    </div>
+
+    <div class="mb-3 form-markdown">
+        <InputMarkdown @bind-Value="@Pelicula.Resumen" For=@(() => @Pelicula.Resumen) Label="Resumen" />
+    </div>
+
+    <!---->
+    <div class="mb-3">
+        <label>Géneros:</label>
+        <div>
+            <SelectorMultiple NoSeleccionados="NoSeleccionados" Seleccionados="Seleccionados">
+
+            </SelectorMultiple>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <InputImg Label="Foto" ImagenSeleccionada="ImagenSeleccionada" imagenURL="@imagenURL" />
+    </div>
+
+
+
+    <button class="btn btn-success" type="submit">Guardar</button>
+
+</EditForm>
+
+@code {
+
+    string? imagenURL;
+
+    [Parameter]
+    [EditorRequired]
+    public Pelicula Pelicula { get; set; } = null!;
+
+    [Parameter]
+    [EditorRequired]
+    public EventCallback OnValidSubmit { get; set; }
+
+    [Parameter]
+    public List<Genero> GenerosSeleccionados { get; set; } = new List<Genero>();
+
+    [Parameter]
+    [EditorRequired]
+    public List<Genero> GenerosNoSeleccionados { get; set; } = new List<Genero>();
+
+    [Parameter]
+    public List<Actor> ActoresSeleccionados { get; set; } = new List<Actor>();
+
+    private List<SelectorMultipleModel> Seleccionados { get; set; } = new List<SelectorMultipleModel>();
+    private List<SelectorMultipleModel> NoSeleccionados { get; set; } = new List<SelectorMultipleModel>();
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrEmpty(Pelicula.Poster))
+        {
+            imagenURL = Pelicula.Poster;
+            Pelicula.Poster = null;
+        }
+
+        Seleccionados =
+            GenerosSeleccionados.Select(x => new SelectorMultipleModel(x.Id.ToString(), x.Nombre)).ToList();
+
+        NoSeleccionados =
+            GenerosNoSeleccionados.Select(x => new SelectorMultipleModel(x.Id.ToString(), x.Nombre)).ToList();
+    }
+
+    private void ImagenSeleccionada(string imagenBase64)
+    {
+        Pelicula.Poster = imagenBase64;
+        imagenURL = null;
+    }
+
+
+
+    private async Task OnDataAnnotationsValidated()
+    {
+        Pelicula.GenerosPelicula = Seleccionados
+            .Select(x => new GeneroPelicula { GeneroId = int.Parse(x.Llave) }).ToList();
+
+
+        await OnValidSubmit.InvokeAsync();
+    }
+}

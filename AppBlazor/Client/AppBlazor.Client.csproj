@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\CrearGenero.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Blazored.Typeahead" Version="4.7.0" />
+    <PackageReference Include="Markdig" Version="0.34.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.10" PrivateAssets="all" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\AppBlazor.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\CrearGenero.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\CrearGenero.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Genero\CrearGenero.razor" />
+  </ItemGroup>
+
+</Project>

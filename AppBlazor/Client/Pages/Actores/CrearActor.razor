@@ -1,0 +1,29 @@
+﻿@page "/actores/crear"
+
+@using AppBlazor.Client.Repositorios;
+@inject IRepositorio repositorio
+@inject NavigationManager navigationManager
+
+<h3>CrearActor</h3>
+
+<FormularioActores onValidSubmit="@Crear" Actor="Actor" />
+@code {
+    private Actor Actor = new Actor();
+
+    private async Task Crear()
+    {
+        var httResponse = await repositorio.Post("api/actores", Actor);
+
+        if (httResponse.Error)
+        {
+            var mensajeError = await httResponse.ObtenerMensajeError();
+            Console.WriteLine("Error xd", mensajeError);
+        }
+        else
+        {
+            Console.WriteLine("Ejecutando metodo crear para Actores");
+            navigationManager.NavigateTo("actores");
+
+        }
+    }
+}

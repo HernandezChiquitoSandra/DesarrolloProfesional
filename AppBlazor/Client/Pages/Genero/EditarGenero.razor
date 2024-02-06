@@ -1,0 +1,67 @@
+﻿@page "/generos/editar/{GeneroId:int}"
+@using AppBlazor.Client.Repositorios;
+@inject NavigationManager navigationManager
+@inject IRepositorio repositorio
+
+<h3>Editar Género</h3>
+
+@if (Genero is null)
+{
+    <p>Cargando...</p>
+}
+else
+{
+    <FormularioGenero @ref="formularioGenero" Genero="Genero" onValidSubmit="Editar" />
+}
+
+
+@code {
+    [Parameter] public int GeneroId { get; set; }
+    private Genero? Genero;
+    private FormularioGenero? formularioGenero;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var respuestaHTTP = await repositorio.Get<Genero>($"api/generos/{GeneroId}");
+
+        if (respuestaHTTP.Error)
+        {
+            if (respuestaHTTP.HttpResponseMessage.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                navigationManager.NavigateTo("generos");
+            }
+            else
+            {
+                var mensajeError = await respuestaHTTP.ObtenerMensajeError();
+                Console.WriteLine("Error Cargar Actualizar genero");
+            }
+        }
+        else
+        {
+            Genero = respuestaHTTP.Response;
+        }
+    }
+
+    private async Task Editar()
+    {
+        var respuestaHTTP = await repositorio.Put("api/generos", Genero);
+
+
+        if (respuestaHTTP.Error)
+        {
+            var mensajeError = await respuestaHTTP.ObtenerMensajeError();
+            Console.WriteLine("error editar genero");
+        }
+        else
+        {
+            Console.WriteLine("Editando género");
+            Console.WriteLine($"Id: {Genero.Id}");
+            Console.WriteLine($"Nombre: {Genero.Nombre}");
+            navigationManager.NavigateTo("generos");
+
+        }
+
+    }
+
+}
+

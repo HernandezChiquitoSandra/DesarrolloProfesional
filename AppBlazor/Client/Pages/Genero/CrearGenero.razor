@@ -1,0 +1,29 @@
+﻿@page "/generos/crear"
+@using AppBlazor.Client.Repositorios;
+@inject NavigationManager navigationManager
+@inject IRepositorio repositorio
+
+<h3>CrearGenero</h3>
+
+<FormularioGenero Genero ="Genero" onValidSubmit="Crear" />
+
+@code {
+    private Genero Genero = new Genero(); //objeto del modelo
+
+    private async Task Crear()
+    {
+        var httResponse = await repositorio.Post("api/generos", Genero);
+
+        if (httResponse.Error)
+        {
+            var mensajeError = await httResponse.ObtenerMensajeError();
+            Console.WriteLine("Error xd", mensajeError);
+        }
+        else
+        {
+            Console.WriteLine("Ejecutando metodo crear");
+            navigationManager.NavigateTo("generos");
+
+        }
+    }
+}
